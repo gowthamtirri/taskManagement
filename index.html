@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Managment</title>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+    <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./app.js">
+
+</head>
+<body class="dark">
+    <div class="theme-toggle">
+        <i class="fa fa-moon-o"></i>
+    </div>
+
+   <div class="row">
+        <div class="col col-sm-2 sidebar">
+            <div class="sidebar-title">
+                <h3>TIRRITODO</h3>
+            </div>
+            <hr>
+            <div class="progress-stats">
+                    <p class="progress-done-num">2/12</p>
+               
+                <div class="progress">
+                    <div class="progress-done" data-done="90"></div>
+                </div>
+            </div>
+            <div class="sidebar-stats">
+                <div class="stat-box">
+                    <h1 class="completed-tasks">0</h1>
+                    <p>Completed <br><span>Tasks</span></p>
+                </div>
+                <div class="stat-box ">
+                    <h1 class="pending-tasks">0</h1>
+                    <p>Todo <br><span>Tasks</span></p>
+                </div>
+                <div class="stat-box">
+                    <h1 class="all-tasks">0</h1>
+                    <p>All <br><span>Tasks</span></p>
+                </div>
+            </div>
+            <hr>
+            <nav class="sidebar-nav">
+                <h4 class="nav-title">PROJECTS</h4>
+                <ul class="nav-list" >
+                    <li class="nav-item nav-active"  data-value="alltasks"><i style="color: rgb(165, 134, 115);" class="fa fa-tasks"></i>All Tasks</li>
+                    <li class="nav-item" data-value="work"><i style="color: rgb(109, 166, 252);" class="fa fa-users"></i>Work</li>
+                    <li class="nav-item" data-value="personal"><i style="color: rgb(147, 85, 202);" class="fa fa-lock"></i>Personal</li>
+                    <li class="nav-item" data-value="design"><i style="color: rgb(255, 93, 233);" class="fa fa-plus-square"></i>Design</li>
+                    <li class="nav-item" data-value="learn"><i style="color: rgb(218, 216, 111);" class="fa fa-leanpub"></i>Learn</li>
+                    <li class="nav-item" data-value="business"><i style="color: rgb(50, 216, 161);" class="fa fa-briefcase"></i>Business</li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Page -->
+        <div class="col col-sm-10 page">
+            <div class="header">
+                <form class="search-bar">
+                    <input type="search" class="search-input" placeholder="Search Tasks">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="new-item">
+                    <form class="create-todo-form">
+                        <input type="text" class="todo-input" placeholder='Enter Task  "Ask her out"'>
+                        <select class="todo-category">
+                            <option value="">-category-</option>
+                            <option value="work">work</option>
+                            <option value="personal">personal</option>
+                            <option value="design">design</option>
+                            <option value="learn">learn</option>
+                            <option value="business">business</option>
+                        </select>
+                        <input type="date"  class="todo-date">
+                        <button type="submit" class="add-new-btn">
+                            <i class="fa fa-plus"></i> Add Task
+                       </button>
+                      </form>                                         
+                </div>  
+             </div>
+             
+            <div class="row todo-containers">
+                <div class="col todo">
+                    <div id="status-title">
+                        <h4>To Do</h4>
+                        <p class="pending-tasks">0</p>
+                    </div>
+                    <ul  id="todo-list" class="todo-list" data-category="todo">  </ul>
+                </div>
+                <div class="col in-progress">
+                    <div id="status-title">
+                        <h4>In Progress</h4>
+                        <p class="inprogres-tasks">0</p>
+                    </div>
+                    <ul id="inprogress-list" class="todo-list" data-category="inprogress"></ul>
+                </div>
+                <div class="col done">
+                    <div id="status-title">
+                        <h4>Done</h4>
+                        <p class="completed-tasks">0</p>
+                    </div>
+                    <ul id="done-list" class="todo-list" data-category="done"> </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="trash-bin">
+            <i class="fa fa-trash"></i>
+        </div>
+   </div>   
+
+   <footer>
+    <p>Built with ❤️ by Gowtham Tirri</p>
+    </footer>
+  
+
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <script src="./appEs6.js"></script>
+</body>
+</html>
