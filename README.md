@@ -1,4 +1,4 @@
-# taskManagement
+## Tirri Todo - The Ultimate Task Management Tool
 
 > The Ultimate Task Mangement Tool 
   * Built With Javascript
